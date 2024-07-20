@@ -31,6 +31,11 @@ const skills = [
         skill:"Communication",
         level:"Intermediate",
         color:"#DC0073"
+    },
+    {
+        skill:"Investing",
+        level:"Intermediate",
+        color: "#DC0073"
     }
 ]
 
@@ -47,6 +52,21 @@ function ProfileCard(){
 
 
 }
+
+const emojis = [
+    {
+        level:"Beginner",
+        emoji:"👶"
+    },
+    {
+        level:"Intermediate",
+        emoji:"👍"
+    },
+    {
+        level:"Advanced",
+        emoji:"💪"
+    }
+]
 
 
 function Profile(){
@@ -81,6 +101,9 @@ function Skills(){
             return(
                 <div className="skill" style={{backgroundColor:`${skillObj.color}`}}>
                 <span>{skillObj.skill}</span>
+                {emojis.map((emojiObj)=>{
+                    {emojiObj.level == skillObj.level? <span>{emojiObj.emoji}</span>:<></>}                
+                })}
                 </div>
             )           
         })}

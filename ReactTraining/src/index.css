@@ -71,3 +71,31 @@ div.skillStyle{
   padding: 5px;
   color: #000;
 }
+
+/* challenge 2 style */
+#challenge2Container{
+  background-color: #DFFDFF;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counters{
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.counters > button{
+  padding: 5px;
+  cursor: pointer;
+}
+
+#challenge2Msg{
+  margin: 10px 0;
+}
