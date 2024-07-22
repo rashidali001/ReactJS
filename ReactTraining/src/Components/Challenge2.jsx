@@ -31,19 +31,41 @@ function Challenge2(){
         //handleDate(count + (step * 1));        
     }
 
+    // count Form
+
+    function handleForm(e){
+        e.preventDefault();
+
+    }
+
+    function handleInput(e){
+        
+        if(e.target.value == ""){
+            setCount(0);
+            return;
+        }
+        setCount(parseInt(e.target.value));
+    }
+
+    function handleInputStep(e){
+        setStep(parseInt(e.target.value));
+    }
+
     return(
 
         <div id="challenge2Container">
 
             <div className="counters">
-            <button onClick={handleMinusStep}>-</button>
-            <span>Step: {step}</span>
-            <button onClick={handlePlusStep}>+</button>
+            <form onSubmit={handleForm}>
+                <input onChange={handleInputStep} type="range" min="1" max="10" value={step} />
+                <span>{step}</span>
+            </form>
             </div>
 
             <div className="counters">
             <button onClick={handleMinusCount}>-</button>
-            <span>Counter: {count}</span>
+            <form onSubmit={handleForm}><input onChange={handleInput} type="number" placeholder={count}/></form>
+            {/* <span>Counter: {count}</span> */}
             <button onClick={handlePlusCount}>+</button>
             </div>
 
@@ -62,7 +84,6 @@ function Challenge2(){
 
         </div>
     )
-
 }
 
 export default Challenge2;
