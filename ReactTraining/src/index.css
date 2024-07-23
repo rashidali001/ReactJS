@@ -125,3 +125,31 @@ div.skillStyle{
   background-color: red;
   color: #fff;
 }
+
+/* Challenge4 styles */
+
+#challenge4{
+  max-width: 800px;
+  margin:20px auto;
+}
+#questionContainer{
+  margin: 20px 0;
+}
+.queryContainer{
+  cursor: pointer;
+  background-color: #DFE0E2;
+  margin: 10px 0;
+  padding: 10px;
+
+}
+.queryHeader{
+
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.queryAnswer{
+  padding: 20px;
+  text-align: center;
+}
