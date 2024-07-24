@@ -242,3 +242,23 @@ h3 {
 .close:hover {
   color: #7950f2;
 }
+
+/* Challenge 6 Styles */
+#challenge6{
+  width: 600px;
+  background-color: #f7f7f7;
+  border-radius: 7px;
+  padding: 25px 100px;
+  margin: 100px auto;
+}
+
+.challenge6form{
+  display: flex;
+  margin: 5px 0;
+}
+
+#challenge6btn{
+  margin: 15px 0;
+  padding: 5px;
+  
+}
